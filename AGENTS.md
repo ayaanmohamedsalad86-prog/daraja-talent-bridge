@@ -28,3 +28,8 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## Daraja Talent
+- App state lives in a client store (src/lib/store.tsx) seeded from src/lib/data.ts and persisted to localStorage — hackathon demo with no login; move to Lovable Cloud if real accounts are needed.
+- Match score rules live only in src/lib/match.ts (skills 60, readiness 20, availability 20) and are covered by src/test/match.test.ts.
+- Role switching is plain routes (/, /mentor, /employer, /impact) linked from the header in components/AppShell.tsx.
